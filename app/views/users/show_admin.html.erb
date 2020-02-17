@@ -1,0 +1,12 @@
+<% flash.each do |type, msg| %>
+    <div>
+    <%= msg %>
+    </div>
+<% end %>
+
+<h2>Welcome <%= @user.name %>!</h2><br>
+<br>
+<h3>ADMIN</h3><br>
+<br>
+<%= link_to "See attractions", attractions_path %>
+<%= link_to "Log Out", logout_path, method: "delete" %>
